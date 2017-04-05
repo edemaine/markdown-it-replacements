@@ -14,11 +14,12 @@ markdown-it typographer):
 * `---` &rarr; &mdash; (rule "mdash")
 * `--` &rarr; &ndash; (rule "ndash")
 
-Each rule can be turned off by an option object (mapping each undesired
-rule name to `false`).  Additional rules can be added by modifying the
-`replacements` module attribute (an array of rules, where each rule has
-a name `rule.name`, regular expression `rule.re`, substitution `rule.sub`,
-and boolean default on/off `rule.default`).
+Each rule can be turned off by specifying an option object when using the
+module (mapping each undesired rule name to `false`).
+Additional rules can be added by modifying the `replacements` module attribute
+(an array of rules, where each `rule` has a name `rule.name`,
+regular expression `rule.re`, substitution `rule.sub`, and boolean
+default on/off `rule.default`).
 
 ## Sample Usage
 
