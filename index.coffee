@@ -1,3 +1,9 @@
+###
+These regular expressions are based on
+https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.js
+(also distributed under MIT License)
+###
+
 replacements = [
   name: 'plusminus'
   re: /\+-/g
@@ -16,6 +22,11 @@ replacements = [
 ,
   name: 'ndash'
   re: /(^|[^-])--([^-]|$)/mg
+  sub: '$1\u2013$2'
+  default: true
+,
+  name: 'ndash'
+  re: /(^|[^-\s])--([^-\s]|$)/mg
   sub: '$1\u2013$2'
   default: true
 ]
