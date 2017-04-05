@@ -2,7 +2,7 @@
 This [markdown-it](https://github.com/markdown-it/markdown-it) plugin
 replaces the
 "[replacements](https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.js)"
-feature in markdown-it typographer, which lets you customize the replacement
+feature in markdown-it typographer, allowing you to customize the replacement
 rules (regular expression substitutions) done to inline text outside of
 autolinks.
 
