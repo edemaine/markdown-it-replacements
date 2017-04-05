@@ -60,4 +60,5 @@ md.renderInline('Hello... "world"---');
 * Unlike the built-in replacements rule, this module does not require
   the global `typographer` option to be set to true.  (The reasoning being
   that, if you're using this module, you probably want to do the
-  substitutions.)
+  substitutions.)  This means that the `typographer` option effectively
+  controls whether to do smart-quote substitution.
