@@ -28,3 +28,5 @@ describe 'markdown-it-replacements', ->
     assert.equal 'yes...', test 'yes...', ellipsis: false
   it 'override plus minus', ->
     assert.equal '1 +- 100', test '1 +- 100', plusminus: false
+  it 'runs even with typographer set to false', ->
+    assert.equal '1\u20139', test '1--9', {}, false
