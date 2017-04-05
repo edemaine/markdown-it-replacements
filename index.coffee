@@ -54,7 +54,7 @@ module.exports = (md, options = {}) ->
               for replacement in replacements
                 ## Use replacement according to options setting (true or
                 ## false), resorting to default if undefined or null.
-                if options[replacement.name] ? replacement.default
+                if options[replacement.name] ? replacement.default ? true
                   token.content = token.content.replace replacement.re, replacement.sub
 
 ###
