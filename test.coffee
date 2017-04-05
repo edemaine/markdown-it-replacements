@@ -30,3 +30,15 @@ describe 'markdown-it-replacements', ->
     assert.equal '1 +- 100', test '1 +- 100', plusminus: false
   it 'runs even with typographer set to false', ->
     assert.equal '1\u20139', test '1--9', {}, false
+  it 'custom replacement, no default', ->
+    markdownItReplacements.replacements.push
+      name: 'allcaps',
+      re: /[a-z]/g,
+      sub: (s) -> s.toUpperCase()
+    assert.equal 'HELLO', test 'hello'
+  it 'custom replacement, default true', ->
+    markdownItReplacements.replacements[markdownItReplacements.replacements.length-1].default = true
+    assert.equal 'HELLO', test 'hello'
+  it 'custom replacement, default false', ->
+    markdownItReplacements.replacements[markdownItReplacements.replacements.length-1].default = false
+    assert.equal 'hello', test 'hello'
