@@ -20,7 +20,7 @@ rule name to `false`).  Additional rules can be added by modifying the
 a name `rule.name`, regular expression `rule.re`, substitution `rule.sub`,
 and boolean default on/off `rule.default`).
 
-## Usage
+## Sample Usage
 
 ```javascript
 // Without smart quotes
