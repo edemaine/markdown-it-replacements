@@ -1,0 +1,27 @@
+{
+  "name": "markdown-it-replacements",
+  "version": "1.0.0",
+  "description": "Customize replacements in markdown-it typographer",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "coffee -c index.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edemaine/markdown-it-typographer-replace.git"
+  },
+  "keywords": [
+    "markdown-it",
+    "markdown-it-plugin"
+  ],
+  "author": "Erik Demaine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edemaine/markdown-it-typographer-replace/issues"
+  },
+  "homepage": "https://github.com/edemaine/markdown-it-typographer-replace#readme",
+  "devDependencies": {
+    "coffee-script": "^1.12.4"
+  }
+}

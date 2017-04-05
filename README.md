@@ -1,2 +1,2 @@
-# markdown-it-typographer-replace
-Replace replacements in markdown-it typographer
+# markdown-it-replacements
+Customize replacements in markdown-it typographer
