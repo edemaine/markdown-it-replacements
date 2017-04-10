@@ -56,6 +56,8 @@ module.exports = (md, options = {}) ->
                 ## false), resorting to default if undefined or null.
                 if options[replacement.name] ? replacement.default ? true
                   token.content = token.content.replace replacement.re, replacement.sub
+    null
+  null
 
 ###
 Export replacements array so that user can add their own rules.
