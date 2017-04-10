@@ -37,12 +37,12 @@ module.exports = (md, options = {}) ->
     ## If we're using this package, probably we meant to use it,
     ## not just when setting the typographer option.
     #return unless state.md.options.typographer
-    for i in [state.tokens.length-1 .. 0]
+    for i in [0...state.tokens.length].reverse()
       block = state.tokens[i]
       continue unless block.type == 'inline'
 
       inside_autolink = 0
-      for j in [block.children.length-1 .. 0]
+      for j in [0...block.children.length].reverse()
         token = block.children[j]
         switch token.type
           when 'link_open'

@@ -10,6 +10,8 @@ test = (text, options, typographer = true) ->
   md.renderInline text
 
 describe 'markdown-it-replacements', ->
+  it 'blank values', ->
+    assert.equal '', test ''
   it 'override (c) replacement behavior', ->
     assert.equal '(c)', test '(c)'
   it 'ndash', ->
