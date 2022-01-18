@@ -1,11 +1,11 @@
 {
   "name": "markdown-it-replacements",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Customize replacements in markdown-it typographer",
   "main": "index.js",
   "scripts": {
     "prepublish": "coffee -c index.coffee",
-    "test": "mocha --compilers coffee:coffee-script/register test.coffee"
+    "test": "mocha test.coffee"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,11 @@
   "homepage": "https://github.com/edemaine/markdown-it-typographer-replace#readme",
   "devDependencies": {
     "coffee-script": "^1.12.4",
-    "markdown-it": "^8.3.1",
-    "mocha": "^3.2.0"
+    "markdown-it": "^12.3.2",
+    "mocha": "^9.1.4"
+  },
+  "mocha": {
+    "require": "coffee-script/register",
+    "reporter": "spec"
   }
 }
